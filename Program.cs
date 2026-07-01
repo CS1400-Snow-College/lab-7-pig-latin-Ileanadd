@@ -5,3 +5,7 @@ Console.Clear();
 
 // Ask the user to introduce the message they want to manipulate
 Console.WriteLine("Let's manipulate your phrase!");
+Console.Write("Please write your message: ");
+string message = Console.ReadLine()!;
+
+string[] words = message.Split(' ');
