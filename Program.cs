@@ -73,3 +73,5 @@ foreach (char letter in pigLatin)
         encryptedM += letter;
     }
 }
+
+Console.WriteLine("We can encrypt that as: " + encryptedM);
