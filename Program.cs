@@ -39,3 +39,5 @@ foreach (string word in words)
 
     pigLatin += pigWord + " ";
 }
+
+Console.WriteLine("In pig latin that's: " + pigLatin);
