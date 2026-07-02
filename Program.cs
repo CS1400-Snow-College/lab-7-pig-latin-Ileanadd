@@ -41,3 +41,35 @@ foreach (string word in words)
 }
 
 Console.WriteLine("In pig latin that's: " + pigLatin);
+
+int offset = 5;
+
+foreach (char letter in pigLatin)
+{
+    if (letter >= 'a' && letter <= 'z')
+    {
+        char encrypted = (char)(letter + offset);
+
+        if (encrypted > 'z')
+        {
+            encrypted = (char)(encrypted - 26);
+        }
+
+        encryptedM += encrypted;
+    }
+    else if (letter >= 'A' && letter <= 'Z')
+    {
+        char encrypted = (char)(letter + offset);
+
+        if (encrypted > 'Z')
+        {
+            encrypted = (char)(encrypted - 26);
+        }
+
+        encryptedM += encrypted;
+    }
+    else
+    {
+        encryptedM += letter;
+    }
+}
